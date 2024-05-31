@@ -1,77 +1,120 @@
-.header__container { 
-  padding: 0 10px;
+/* styles/header.css */
+
+/* Estilos Mobile First */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
-@media (min-width: 640px) {
+.header__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
+.header__container__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav__menu__link {
+  text-decoration: none;
+  font-family: Inter;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  letter-spacing: -0.01em;
+}
+
+.nav__menu__link-active {
+  border-bottom: 2px solid #348b61;
+  border-radius: 5px;
+  color: #094d2c;
+}
+
+.nav__menu__link-inactive {
+  color: #515151;
+}
+
+.nav__menu__btn {
+  background-color: #348b61;
+  color: #fff;
+  border: none;
+  width: 100%;
+  max-width: 150px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.location {
+  width: 100%;
+  max-width: 327px;
+  height: 36px;
+  background: #348B61;
+  border-radius: 8px;
+  border: none;
+  color: #BBFFE7;
+  margin-top: 10px;
+}
+
+/* Estilos para telas maiores (min-width: 768px) */
 @media (min-width: 768px) {
-}
-
-@media (min-width: 1024px) {
-}
-
-@media (min-width: 768px ){
   .header {
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
+    flex-direction: row;
     height: 77px;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: center;
   }
 
   .header__container {
-    display: flex;
-    width: 100%;
-    align-self: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
   }
+
   .header__container__content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 750px;
     height: 45px;
   }
+
   .nav {
     margin: 0 0 0 32px;
   }
+
   .nav__menu {
-    list-style: none;
-    display: flex;
+    flex-direction: row;
     gap: 47px;
   }
-  .nav__menu__link{
-    text-decoration: none;
-    font-family: Inter; 
-       text-align: left;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
-    letter-spacing: -0.01em;
-  }
-  .nav__menu__link-active {
-    border-bottom: 2px solid #348b61;
-    border-radius: 5px;
-    color: #094d2c;
-  }
-  .nav__menu__link-inactive {
-    color: #515151;
-  }
+
   .nav__menu__btn {
     margin: -10px;
-    background-color: #348b61;
-    color: #fff;
-    border: none;
-    width: 150px;
-    padding: 12px;
-    border-radius: 8px;
-  }
-  .location{
-    width: 327px;
-    height: 36px;
-    background: #348B61;
-    border-radius: 8px;
-    border: none;
-    color: #BBFFE7;
-    margin: 10px 0 0;
   }
 }
