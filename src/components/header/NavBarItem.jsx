@@ -7,7 +7,7 @@ export function NavbarItem({ children, href, ...props }) {
   const isActive = pathname === href;
 
   return (
-    <li className="mav__menu_direction">
+    <li className="nav__menu_direction">
       <Link
         href={href}
         {...props}
