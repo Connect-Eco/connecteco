@@ -16,10 +16,14 @@ export function Header() {
     setIsOpen(!isOpen);
   };
 
+  const toggleMenuSandwich = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <header className="header">
       <div className="header__container_content">
-        {isOpen && <Navbar />}
+        {isOpen && <Navbar onItemClick={toggleMenuSandwich}   />}
         <div className="header__menu">
           <div className="header__menu-logo">
             <Link href={"/"}><Logo /></Link>
