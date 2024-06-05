@@ -21,7 +21,7 @@ const linksMenu = [
   },
 ];
 
-export function Navbar( { onItemClick } ) {
+export function Navbar({ onItemClick }) {
   const windowWidth = UseWindowWidth();
 
   return (
@@ -32,12 +32,10 @@ export function Navbar( { onItemClick } ) {
             {link.label}
           </NavbarItem>
         ))}
-        <div className="nav__container_button">
-          <CustomButton className={"button"} onClick={onItemClick}>
-            <Link href={"/faca-parte"}>Faça parte</Link>
-          </CustomButton>
-          {windowWidth < 530 && <Location />}
-        </div>
+        <CustomButton className={"button"} onClick={onItemClick}>
+          <Link href={"/faca-parte"}>Faça parte</Link>
+        </CustomButton>
+        {windowWidth < 390 && <Location />}
       </ul>
     </nav>
   );
