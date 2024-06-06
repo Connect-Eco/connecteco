@@ -5,7 +5,7 @@ function gerarIdUnico() {
 const bannerInfo = [
   {
     title: "Encontre pontos de reciclagem perto de você!",
-    description: "Para um futuro sustentável. Veja onde reciclar!",
+    description: "Para um futuro sustentável, veja onde reciclar!",
     id: gerarIdUnico(),
     src: "https://images.unsplash.com/photo-1613858749733-3a3e456e3d9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Peneus para reciclar",
@@ -15,7 +15,7 @@ const bannerInfo = [
     button: false
   },
   {
-    title: "Junte-se a Nós por um Planeta Sustentável.",
+    title: "Junte-se a nós por um planeta sustentável.",
     description: "Fique por dentro de todas as novidades e informações sobre reciclagem e sustentabilidade.",
     id: gerarIdUnico(),
     src: "https://plus.unsplash.com/premium_photo-1681965550198-c1c039421905?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGVjb2xvZ2lhfGVufDB8fDB8fHww",
