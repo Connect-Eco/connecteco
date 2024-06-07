@@ -11,6 +11,7 @@ export default function Home() {
   const [selectedEstado, setSelectedEstado] = useState("");
   const [selectedCidade, setSelectedCidade] = useState("");
   const [selectedBairro, setSelectedBairro] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
 
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
         setSelectedEstado={setSelectedEstado}
         setSelectedCidade={setSelectedCidade}
         setSelectedBairro={setSelectedBairro}
+        setCurrentPage={setCurrentPage}
       />
       <CardsList 
         selectedMaterial={selectedMaterial} 
@@ -30,6 +32,8 @@ export default function Home() {
         setSelectedEstado={setSelectedEstado}
         setSelectedCidade={setSelectedCidade}
         setSelectedBairro={setSelectedBairro}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
       />
     </>
   );

@@ -76,9 +76,10 @@ export function CardsList({
   selectedBairro,
   setSelectedEstado,
   setSelectedCidade,
-  setSelectedBairro 
+  setSelectedBairro,
+  currentPage,
+  setCurrentPage
 }) {
-  const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(12);
   const windowWidth = UseWindowWidth();
 
