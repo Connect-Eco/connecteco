@@ -8,9 +8,7 @@ import materials from "../../constants/materials.js";
 export function ButtonsMaterials({ 
   selectedMaterial, 
   setSelectedMaterial,
-  setSelectedEstado,
-  setSelectedCidade,
-  setSelectedBairro
+  setCurrentPage
 }) {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
@@ -30,9 +28,7 @@ export function ButtonsMaterials({
 
   const handleChange = (event) => {
     setSelectedMaterial(event.target.value);
-    setSelectedEstado("");
-    setSelectedCidade("");
-    setSelectedBairro("");
+    setCurrentPage(1);
   };
 
   return (
@@ -46,6 +42,8 @@ export function ButtonsMaterials({
               className={`materials__button ${selectedMaterial === material ? 'materials__button--selected' : ''}`}
               onClick={() => {
                 setSelectedMaterial(material);
+          
+                setCurrentPage(1);
               }}
             >
               {material}
